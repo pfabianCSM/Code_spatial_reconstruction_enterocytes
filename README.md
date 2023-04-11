@@ -1,3 +1,12 @@
+# Group Project for Pareto TI
+
+This fork adds new elements to this analysis using ParTI. 
+Next steps: 
+  * add data
+  * implement PARTI
+  
+ ----------------------------------------------------------------------------------------------------
+
 # Code spatial reconstruction enterocytes
 
 This is a collection of analysis scripts that were used in our manuscript "Spatial reconstruction of single enterocytes uncovers broad zonation along the intestinal villus axis".
