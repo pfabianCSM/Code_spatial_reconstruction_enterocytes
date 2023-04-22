@@ -1,0 +1,40 @@
+% % Set random seed for reproducibility
+% rng(42);
+% 
+% % Define number of samples and features
+% n = 50; % number of samples
+% p = 4; % number of features
+% 
+% % Generate random data matrix
+% X = randn(n, p);
+% 
+% % Add correlation between features
+% X(:, 2) = X(:, 1) + randn(n, 1);
+% X(:, 3) = 0.5 * X(:, 1) + 0.5 * X(:, 2) + randn(n, 1);
+% X(:, 4) = 2 * X(:, 1) - X(:, 2) + randn(n, 1);
+% 
+% % Generate random response variable
+% y = randi([0 1], n, 1);
+% 
+% % Save dataset to file
+% save('mydataset.mat', 'X', 'y');
+
+% Load dataset
+load('mydataset.mat');
+
+% Install packages
+% Note: ParetoTI requires the Statistics and Machine Learning Toolbox
+% You can install it using the Add-Ons menu in MATLAB or by running:
+%   >> matlab.addons.install('statistics')
+
+% Run ParetoTI
+alpha = 0.1; % set alpha parameter
+[pvals, h] = paretoTI(mydataset, alpha); % run ParetoTI
+
+% Print significant features
+sig_feats = find(h);
+disp(['Significant features: ', num2str(sig_feats)]);
+
+% Create tetrahedron plot
+paretoTIVisual(pvals);
+

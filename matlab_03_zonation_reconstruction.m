@@ -23,7 +23,7 @@ scRNAseq_mat=seq_data.data;
 % Normalize UMI table by the sum of all UMIs per cell
 scRNAseq_mat_norm=scRNAseq_mat./repmat(sum(scRNAseq_mat),size(scRNAseq_mat,1),1);
 
-addpath('/Volumes/shalevi/amoor5/Matlab code/export_fig-master'); %export_fig function from https://github.com/altmany/export_fig
+% addpath('/Volumes/shalevi/amoor5/Matlab code/export_fig-master'); %export_fig function from https://github.com/altmany/export_fig
 
 
 %% Handle the LCM data
