@@ -1,9 +1,11 @@
-# Group Project for Pareto TI
+# Group Project for Pareto TI / UMAP
 
-This fork adds new elements to this analysis using ParTI. 
-Next steps: 
-  * add data
-  * implement PARTI
+This fork adds new elements to this analysis. See umap_exploration.ipynb for all code.
+
+* UMAP
+* tSNE
+* PCA
+* Comparisons between methods
   
  ----------------------------------------------------------------------------------------------------
 
