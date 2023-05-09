@@ -1,6 +1,6 @@
 # Group Project for Pareto TI / UMAP
 
-This fork adds new elements to this analysis
+This fork adds new elements to this analysis. See umap_exploration.ipynb for all code.
 
 * UMAP
 * tSNE
